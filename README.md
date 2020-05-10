@@ -9,6 +9,9 @@ Front-end useful components in SCSS/JS to reuse in projects.
 
     ```bash
     npm install
+    npm run install:vendors
     ```
+
+    Note: All front-end libraries should be required in this `./src/vendors/package.json` file.
 
 3. All done ? Now, you can make your modification or add your awesome idea :)
