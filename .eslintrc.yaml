@@ -1,0 +1,41 @@
+extends:
+  - 'eslint-config-airbnb-base'
+  - 'eslint-config-standard'
+
+# Parser options
+root: true
+parser: espree
+parserOptions:
+  sourceType: script # module or script
+  ecmaVersion: 2020
+
+# Environments
+env:
+  browser: true
+  commonjs: true
+  es2020: true
+  es6: false
+  jquery: true
+  node: true
+
+# Rules
+rules:
+  # ------------------------------
+  # Eslint Config Standard
+  # @url: https://eslint.org/docs/rules/
+  # ------------------------------
+
+  # Styles
+  camelcase: [error, { properties: always }]
+  indent: [error, 4]
+  no-multiple-empty-lines: [error, { max: 10, maxEOF: 1, maxBOF: 0 }]
+  object-property-newline: [off]
+  prefer-object-spread: [off]
+  semi: [error, always]
+  semi-style: [off]
+  space-before-function-paren: [error, { anonymous: never, named: never, asyncArrow: always }]
+
+  # Best Practices
+  class-methods-use-this: [off]
+  max-classes-per-file: [off]
+  no-multi-spaces: [off]

@@ -1,0 +1,25 @@
+{
+  "name": "@essomia/elementis",
+  "version": "1.0.0",
+  "description": "Front-end useful components in SCSS/JS to reuse in projects.",
+  "homepage": "https://github.com/essomia/elementis#readme",
+  "author": "Melissa Boutry <github@melissaboutry.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/essomia/elementis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/essomia/elementis/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "install:vendors": "(cd src/vendors/ && npm install)",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "help": "gulp --tasks"
+  },
+  "dependencies": {
+    "@essomia/gulpflow-starter": "git://github.com/essomia/gulpflow-starter.git"
+  }
+}

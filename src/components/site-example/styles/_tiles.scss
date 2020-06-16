@@ -1,0 +1,38 @@
+//
+// Site Example - Tiles
+//
+
+.tiles {
+    display: grid;
+    margin: 2rem 0;
+    padding: 0;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: 60rem) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 5rem;
+        background-color: $siteexample-tiles-item-bg-color;
+    }
+
+    span {
+        padding: 0 .5rem;
+    }
+
+    a {
+        color: $siteexample-tiles-item-link-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $siteexample-tiles-item-link-hover-color;
+            text-decoration: none;
+        }
+    }
+}

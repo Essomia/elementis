@@ -1,0 +1,4 @@
+node_modules/
+*.log
+htdocs/lib/
+htdocs/templates/
