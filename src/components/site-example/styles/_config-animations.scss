@@ -1,0 +1,25 @@
+//
+// Site Example - Config Animations
+//
+
+@keyframes beats-animation {
+
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(.5);
+    }
+}
+
+@keyframes shake-animation {
+
+    0% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+        transform: rotate(-3deg);
+    }
+}

@@ -1,0 +1,59 @@
+//
+// Site Example - Layout
+//
+
+//-- Global
+
+html {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: $siteexample-bg-color;
+    color: $siteexample-text-color;
+    font-family: sans-serif;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 3rem 2.5%;
+}
+
+//-- Containers
+
+#demo-header,
+#demo-main {
+    position: relative;
+    text-align: center;
+
+    .content {
+        max-width: 64rem;
+        margin: 0 auto;
+    }
+
+    h1 {
+        color: $siteexample-title-color;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    p {
+        margin: 1rem auto;
+        line-height: 1.5;
+    }
+
+    img,
+    svg {
+        height: auto;
+    }
+
+    hr {
+        max-width: 17.5rem;
+        height: .0625rem;
+        margin: 1.5em auto;
+        border: 0;
+        background-color: $siteexample-border-color;
+    }
+}

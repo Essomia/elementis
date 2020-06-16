@@ -1,0 +1,41 @@
+//
+// Site Example - Icons
+//
+
+// Logo
+
+.icon-logo {
+    width: 200px;
+    color: $siteexample-icon-primary-color;
+
+    .ico-line {
+        transform-origin: 50%;
+        animation: beats-animation 500ms ease-in-out infinite alternate;
+        stroke: $siteexample-icon-secondary-color;
+    }
+
+    .ico-circle {
+        fill: currentColor;
+    }
+}
+
+// Maintenance
+
+.icon-construction {
+    width: 130px;
+    color: $siteexample-icon-primary-color;
+
+    .ico-board {
+        transform-origin: 50%;
+        animation: shake-animation 100ms ease-in-out infinite alternate;
+        fill: currentColor;
+    }
+
+    .ico-foot {
+        fill: $siteexample-icon-secondary-color;
+    }
+
+    &:hover .ico-board {
+        animation-duration: 50ms;
+    }
+}
