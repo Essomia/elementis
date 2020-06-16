@@ -4,23 +4,31 @@
 
 const customConfig = {
     root: {
-        src: './src',
-        dest: './htdocs/lib'
+        src: './src/',
+        dest: './htdocs/lib/'
     },
     ifs: {
         doLinter: true,
         doMinify: true,
         doSourcemaps: false
     },
+    linters: {
+        eslint: './.eslintrc.yaml',
+        stylelint: './.stylelintrc.yaml'
+    },
     sources: {
-        images: '/components/**/images/**/*.{jpg,jpeg,png,gif,svg}',
-        js: '/components/**/scripts/**/*.js',
-        scss: '/components/**/styles/**/*.{sass,scss}'
+        html: 'components/**/templates/**/*.html',
+        images: 'components/**/images/**/*.{jpg,jpeg,png,gif,svg}',
+        js: 'components/**/scripts/**/*.js',
+        scss: 'components/**/styles/**/*.{sass,scss}'
+    },
+    destinations: {
+        html: '../templates/'
     },
     tasks: {
-        watch: ['js', 'scss'],
-        build: ['images', 'js', 'scss']
+        watch: ['html', 'js', 'scss'],
+        build: ['html', 'images', 'js', 'scss']
     }
 };
 
-const boilerplate = require('@essomia/gulpflow-starter')(customConfig);
+require('@essomia/gulpflow-starter')(customConfig);
