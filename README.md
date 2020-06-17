@@ -18,7 +18,6 @@ Front-end useful components in SCSS/JS to re-use in projects.
 
 3. All done!
 
-
 ## Available components
 
 | Components        | Note                                                                      |
@@ -53,6 +52,10 @@ npm run watch
 
 All front-end libraries should be required in this `./src/vendors/package.json` file.
 
+## Change Log
+
+Follow-up the modifications made in [the Change Log](./CHANGELOG.md).
+
 ## License
 
-Released under [the MIT license](./LICENSE).
+Project released under [the MIT license](./LICENSE).
