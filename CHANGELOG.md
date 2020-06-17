@@ -4,6 +4,9 @@
 
 ### [1.1.0](https://github.com/Essomia/elementis/1.0.0...1.1.0)
 
+- In `site-example`:
+    - Rename main `coming-soon.scss` to `landing.scss`, since its for coming-soon and maintenance pages.
+    - Add main `demo.scss` file to kept all related styles only needed by others components demo templates.
 - Add missing CHANGELOG file.
 
 ### [1.0.0](https://github.com/Essomia/elementis/1.0.0)
