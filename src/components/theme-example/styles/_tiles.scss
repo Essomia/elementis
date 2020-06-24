@@ -1,5 +1,5 @@
 //
-// Site Example - Tiles
+// Theme Example - Tiles
 //
 
 .tiles {
@@ -19,7 +19,7 @@
         align-items: center;
         width: 100%;
         height: 5rem;
-        background-color: $siteexample-tiles-item-bg-color;
+        background-color: $theme-landing-tiles-item-bg-color;
     }
 
     span {
@@ -27,11 +27,11 @@
     }
 
     a {
-        color: $siteexample-tiles-item-link-color;
+        color: $theme-landing-tiles-item-link-color;
         text-decoration: none;
 
         &:hover {
-            color: $siteexample-tiles-item-link-hover-color;
+            color: $theme-landing-tiles-item-link-hover-color;
             text-decoration: none;
         }
     }

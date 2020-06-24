@@ -1,0 +1,22 @@
+//
+// Theme Example - Config. Variables
+//
+
+//-- Landing
+
+$theme-landing-layout-bg-color: #3b2c4b;
+$theme-landing-layout-border-color: lighten($theme-landing-layout-bg-color, 10%);
+$theme-landing-layout-title-color: lighten($theme-landing-layout-bg-color, 40%);
+$theme-landing-layout-text-color: #a9a9a9;
+
+$theme-landing-icon-primary-color: #b89ed6;
+$theme-landing-icon-secondary-color: darken(desaturate($theme-landing-icon-primary-color, 20%), 40%);
+
+$theme-landing-tiles-item-bg-color: #4c395d;
+$theme-landing-tiles-item-link-color: lighten($theme-landing-tiles-item-bg-color, 60%);
+$theme-landing-tiles-item-link-hover-color: lighten($theme-landing-tiles-item-bg-color, 40%);
+
+//-- Demo
+
+$theme-demo-dark-bg-color: #3a3a3a;
+$theme-demo-light-bg-color: #d6d6d6;

@@ -1,0 +1,20 @@
+//
+// Theme Example - Demo
+//
+
+%demo-bg {
+    position: relative;
+    min-height: 100vh;
+}
+
+.demo-bg-dark {
+    @extend %demo-bg;
+
+    background-color: $theme-demo-dark-bg-color;
+}
+
+.demo-bg-light {
+    @extend %demo-bg;
+
+    background-color: $theme-demo-light-bg-color;
+}

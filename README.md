@@ -24,9 +24,7 @@ Front-end useful components in SCSS/JS to re-use in projects.
 | :---------------- | :------------------------------------------------------------------------ |
 | core              | Import core dependencies (like _normalize_ and _jquery_)                  |
 
-| Theme Components  | Note                                                                      |
-| :---------------- | :------------------------------------------------------------------------ |
-| site-example      | Components for coming-soon, maintenance and demo pages                    |
+Note: The component `theme-example` contains _landing_ styles for coming-soon and maintenance pages and _example_ styles used by other components for demo pages/templates.
 
 ## Components structure
 

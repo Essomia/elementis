@@ -33,7 +33,7 @@
     <link rel="shortcut icon" sizes="196x196" href="/lib/core/images/icon-196.png">
 
     <link rel="stylesheet" type="text/css" href="/lib/core/styles/dependencies.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/lib/site-example/styles/landing.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/lib/theme-example/styles/landing.css" media="all">
 </head>
 
 <body>
