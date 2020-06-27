@@ -8,6 +8,7 @@
     - Rename main `coming-soon.scss` to `landing.scss`, since its for coming-soon and maintenance pages.
     - Add main `demo.scss` file to kept all related styles only needed by others components demo templates.
 - Add missing CHANGELOG file.
+- Create `messages` components for customizable toasts or alert messages.
 
 ### [1.0.0](https://github.com/Essomia/elementis/1.0.0)
 
