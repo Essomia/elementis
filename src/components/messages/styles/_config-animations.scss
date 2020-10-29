@@ -2,7 +2,7 @@
 // Messages - Config. Animations
 //
 
-@keyframes slide-animation {
+@keyframes slide-open-animation {
 
     from {
         right: -100%;
@@ -10,5 +10,16 @@
 
     to {
         right: 1rem;
+    }
+}
+
+@keyframes slide-close-animation {
+
+    from {
+        right: 1rem;
+    }
+
+    to {
+        right: -100%;
     }
 }

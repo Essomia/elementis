@@ -26,7 +26,8 @@ class Toast {
         const defaults = {
             className: `toast-uid-${this.uid}`,
             closeButton: true,
-            autoOpen: false
+            autoOpen: false,
+            delay: 0
         };
 
         // Extends defaults options with the passed in arguments
@@ -72,6 +73,12 @@ class Toast {
         if (this.options.autoOpen === true) {
             this.open();
         }
+
+        if (this.options.delay > 0) {
+            setTimeout(() => {
+                this.close();
+            }, this.options.delay * 1000);
+        }
     }
 
     /**
@@ -91,7 +98,11 @@ class Toast {
      * Action close toast
      */
     close() {
-        this.$toast.className = this.$toast.className.replace('open', '');
+        this.$toast.className = this.$toast.className.replace('open', 'closing');
+
+        setTimeout(() => {
+            this.$toast.className = this.$toast.className.replace('closing', '');
+        }, 300);
     }
 }
 

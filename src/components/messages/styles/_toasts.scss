@@ -89,7 +89,13 @@
     &.open {
         right: 0;
         display: block;
-        animation: slide-animation 300ms ease-in-out;
+        animation: slide-open-animation 300ms ease-in-out;
+    }
+
+    &.closing {
+        right: -100%;
+        display: block;
+        animation: slide-close-animation 300ms ease-in-out;
     }
 
     //-- Variants
