@@ -1,5 +1,5 @@
 /**
- * Elementis - Core Dependencies
+ * Core - Dependencies
  */
 
 //= require vendors/node_modules/jquery/dist/jquery.js

@@ -1,6 +1,6 @@
 {
   "name": "@essomia/elementis",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Front-end useful components in SCSS/JS to reuse in projects.",
   "homepage": "https://github.com/essomia/elementis#readme",
   "author": "Melissa Boutry <github@melissaboutry.com>",

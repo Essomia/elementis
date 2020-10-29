@@ -26,7 +26,7 @@ const customConfig = {
         html: '../templates/'
     },
     tasks: {
-        watch: ['html', 'js', 'scss'],
+        watch: ['html', 'images', 'js', 'scss'],
         build: ['html', 'images', 'js', 'scss']
     }
 };

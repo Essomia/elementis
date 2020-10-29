@@ -1,0 +1,56 @@
+//
+// Core - Util. SVG
+//
+
+$core-svg-replace-color-1: #123456;
+$core-svg-replace-color-2: #abcdef;
+$core-svg-replace-colors: (
+    $core-svg-replace-color-1,
+    $core-svg-replace-color-2
+);
+
+@mixin core-svg-inline-image($file, $color: false) {
+    $uri: '';
+    $svg: scssfunction-read-file($file); // Use custom sass function
+
+    @if $color {
+        @if type-of($color) == 'color' {
+            $svg: core-string-color-replace($svg, $core-svg-replace-color-1, $color);
+        }
+
+        @if type-of($color) == 'list' {
+            @for $i from 1 through length($color) {
+                $svg: core-string-color-replace($svg, nth($core-svg-replace-colors, $i), nth($color, $i));
+            }
+        }
+    }
+
+    $uri: core-svg-data-uri($svg);
+
+    // Output
+    background-image: #{$uri};
+}
+
+@function core-svg-data-uri($svg) {
+    $encoded: '';
+    $slice: 2000;
+    $index: 0;
+    $loops: ceil(str-length($svg) / $slice);
+
+    // Chunk up string in order to avoid "stack level too deep" error
+    @for $i from 1 through $loops {
+        $chunk: str-slice($svg, $index, $index + $slice - 1);
+
+        $chunk: core-string-replace($chunk, '"', "'");
+        $chunk: core-string-replace($chunk, '<', '%3C');
+        $chunk: core-string-replace($chunk, '>', '%3E');
+        $chunk: core-string-replace($chunk, '&', '%26');
+        $chunk: core-string-replace($chunk, '#', '%23');
+
+        $encoded: #{$encoded}#{$chunk};
+        $index: $index + $slice;
+    }
+
+    // stylelint-disable-next-line string-quotes
+    @return url("data:image/svg+xml;charset=utf8,#{$encoded}");
+}

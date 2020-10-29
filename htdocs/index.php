@@ -33,11 +33,11 @@
     <link rel="shortcut icon" sizes="196x196" href="/lib/core/images/icon-196.png">
 
     <link rel="stylesheet" type="text/css" href="/lib/core/styles/dependencies.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/lib/site-example/styles/coming-soon.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/lib/theme-example/styles/landing.css" media="all">
 </head>
 
 <body>
-    <header id="demo-header">
+    <header id="header">
         <div class="content">
             <h1>Elementis</h1>
             <p>
@@ -47,7 +47,7 @@
         </div>
     </header>
 
-    <main id="demo-main">
+    <main id="main">
         <div class="content">
             <div class="tiles">
             <?php
@@ -66,6 +66,6 @@
         </div>
     </main>
 
-    <link rel="stylesheet" type="text/css" href="/lib/core/scripts/dependencies.js" media="all">
+    <script src="/lib/core/scripts/dependencies.js"></script>
 </body>
 </html>
